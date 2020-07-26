@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 73766a68294c49242885b690a8a58d43, type: 3}
+  iconMaxWidth: 150
+  title: Fighter Cinematic | Prototype Series
+  sections:
+  - heading: About this project
+    text: This project is a prototype that was made using Unity features to build
+      a cinematic just like in many popular fighting games!
+    linkText: 'Full video '
+    url: https://on.unity.com/3fXgjcD
+  - heading: Controls
+    text: 
+    linkText: 
+    url: 
+  - heading: 
+    text: '[SPACE] Activate Special Move'
+    linkText: 
+    url: 
+  loadedLayout: 1
