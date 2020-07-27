@@ -117,6 +117,7 @@ public class PlayerController : MonoBehaviour
         foreach (Collider collider in hitColliders)
             if (collider.TryGetComponent<Damageable>(out Damageable damageable))
             {
+                Debug.LogError("HIT!");
                 currentComboCharge += 0.1f;
                 onComboCharge.Invoke(currentComboCharge / 1);
                 damageable.Damage(5);
