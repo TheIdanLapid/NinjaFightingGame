@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float moveSpeed = 1;
     [SerializeField] float jumpHeight = 5;
     [SerializeField] LayerMask enemyLayer = default;
-    [SerializeField] AudioSource sound;
+    [SerializeField] AudioSource specialAttackSound;
 
     [Header("Combo Info")]
     [SerializeField] float comboTime = 0.9f;
@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
 
     public void SuperHit()
     {
-        sound.Play();
+        specialAttackSound.Play();
         if (Physics.SphereCast(transform.position, 2, Vector3.right, out RaycastHit info, 10, enemyLayer))
         {
             if (info.transform.TryGetComponent<Damageable>(out Damageable damageable))
