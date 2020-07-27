@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
         playerVelocity.x = value.Get<Vector2>().x * moveSpeed;
         // Jump - When clicking "Up" key, and grounded
         if (groundedPlayer)
-            playerVelocity.y += value.Get<Vector2>().y * Mathf.Sqrt(jumpHeight * -3.0f * Physics.gravity.y);
+            playerVelocity.y += value.Get<Vector2>().y * Mathf.Sqrt(jumpHeight * -2.0f * Physics.gravity.y);
     }
     void OnJump(InputValue value)
     {
@@ -82,16 +82,16 @@ public class PlayerController : MonoBehaviour
     void OnPunch(InputValue value)
     {
         //TODO: add punch animation here
-        //CheckHit();
-        //currentComboTime = comboTime;
-        //CheckCombo(0);
+        CheckHit();
+        currentComboTime = comboTime;
+        CheckCombo(0);
     }
     void OnKick(InputValue value)
     {
         //TODO: add kick animation here
-        //CheckHit();
-        //currentComboTime = comboTime;
-        //CheckCombo(1);
+        CheckHit();
+        currentComboTime = comboTime;
+        CheckCombo(1);
     }
 
     void CheckCombo(int move)
